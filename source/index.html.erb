@@ -1,0 +1,19 @@
+---
+title: Homepage
+---
+
+
+<%= javascript_include_tag  "sheetrock.min" %> 
+<table id="statistics" class="table table-condensed table-striped"></table>
+
+
+
+
+<script>
+var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1wvaZJMJ-WSakqXSFpY8OzTklLMPYMLl5XA0QMZckeXM/edit#gid=2051584982';
+
+// Load an entire worksheet.
+$('#statistics').sheetrock({
+  url: mySpreadsheet
+});
+</script>
